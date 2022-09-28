@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Jarallax -->
+    <link rel="stylesheet" href="css/jarallax.css">
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    -->
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Havana Cafe Clon</title>
+  </head>
+  <body>
+
+    <section class="home">
+      <div class="jarallax page-home" data-jarallax>
+        <div class="col-image" style="display: block; left: 1150px; top: 400px;">
+          <img src="img/homesingingman.png" alt="Welcome to havana Bar Image">
+        </div>
+
+        <!-- Titulo -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <span class="d-inline-block" style="background: url(img/sprite.png) -175px -117px no-repeat; width:63px; height:38px;"></span>
+              <h2 class="d-inline-block" >Welcome to Havana Bar</h2>
+              <span class="d-inline-block" style="background: url(img/sprite.png) -255px -117px no-repeat; width:63px; height:38px;"></span>
+            </div>
+          </div>
+        </div>      
+
+        <!-- Cuadro de comidas -->
+        <a href="#" onmouseover="changeHover()" onmouseout="changeOutHover()" style="background: url(img/frames.png) -292px -10px no-repeat; width: 424px; height: 306px; display: block; position: absolute; left: 350px; top: 200px;">
+          <img src="img/eveningrestaurant.png" style="position:absolute; left:36px; top: 34px;" alt="">
+          <div id="cuadro_evening" style="background: url(img/frame_hovers.png) -292px -10px no-repeat; width: 424px; height: 306px; position: static;  "></div>
+        </a>
+
+        <!-- Cuadro de bebidas -->
+        <a href="#" onmouseover="changeFrameSummer()" onmouseout="changeOutHoverSummer()" style="background: url(img/frames.png) -293px -328px no-repeat; width: 291px; height: 231px; display: block; position: absolute; left: 210px; top: 410px;">          
+          <img src="img/summerhours.png" style="position:absolute; left:29px; top: 27px;" alt="">
+          <div id="cuadro_summer" style="background: url(img/frame_hovers.png) -293px -328px no-repeat; width: 424px; height: 306px; position: static; "></div>          
+        </a>
+
+        <!-- Cuadro de eventos -->
+        <!--
+        <a href="#" onmouseover="changeFrameEvents()" onmouseout="changeOutHoverEvents()" style="background: url(img/frames.png) -4px -8px no-repeat; width: 277px; height: 363px; display: block; position: absolute; left: 10px; top: 10px;">          
+          <img src="img/livemusic.png" style="position:absolute; left:29px; top: 24px;" alt="">
+          <div id="cuadro_eventos" style="background: url(img/frame_hovers.png) -4px -8px no-repeat; width: 277px; height: 363px; position: static; "></div>          
+        </a>
+      -->        
+
+      </div>
+    </section>
+
+    <section class="contacto">
+      <div class="jarallax page-contact" data-jarallax>
+      </div>
+    </section>
+
+    <section class="food">
+      <div class="jarallax page-food" data-jarallax>
+      </div>
+    </section>
+
+    <section class="drinks">
+      <div class="jarallax page-drinks" data-jarallax>
+      </div>
+    </section>
+
+    <section class="events">
+      <div class="jarallax page-events" data-jarallax>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="jarallax page-about" data-jarallax>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="jarallax page-gallery" data-jarallax>
+      </div>
+    </section>
+
+    <section class="join">
+      <div class="jarallax page-join" data-jarallax>
+      </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js" ></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jarallax -->
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-element.min.js"></script>
+    <!-- Custom scripts -->
+    <script>
+
+      function changeFrameEvents(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_eventos');
+        //cambiamos el tipo de posicionamiento
+        cuadro.style.position = "absolute";
+      }
+
+      function changeOutHoverEvents(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_eventos');
+        //cambiamos el tipo de posicionamiento
+        cuadro.style.position = "static";
+      }
+
+      function changeFrameSummer(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_summer');
+        //cambiamos el tipo de posicionamiento
+        cuadro.style.position = "absolute";
+      }
+
+      function changeOutHoverSummer(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_summer');
+        //cambiamos el tipo de posicionamiento
+        cuadro.style.position = "static";
+      }
+
+      function changeOutHover(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_evening');
+        //cambiamos el tipo de posicionamiento
+        cuadro.style.position = "static";
+        //alert("on mouse out");
+      }
+
+      function changeHover(){
+        //Buscamos el cuadro
+        cuadro = document.getElementById('cuadro_evening');
+        //
+        cuadro.style.position = "absolute";
+        //alert(cuadro.style.position);
+      
+
+      }
+
+      
+    </script>
+
+  </body>
+</html>

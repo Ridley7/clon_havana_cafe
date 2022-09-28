@@ -1,0 +1,81 @@
+
+/*Home*/
+.page-home{
+    background: url('../img/homebkg.jpg');
+    min-height: 1200px;
+    position: relative;
+    width: 100% !important;
+    min-width: 1000px;
+    padding: 0;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+
+
+
+.home-text .standard-text{
+    width: 625px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-contact{
+    background: url('../img/contactbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-contact{
+    background: url('../img/contactbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-food{
+    background: url('../img/foodbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-drinks{
+    background: url('../img/drinkbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-event{
+    background: url('../img/eventsbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-about{
+    background: url('../img/aboutbkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-gallery{
+    background: url('../img/gallerybkg.jpg');
+    min-height: 1200px;  
+}
+
+.page-join{
+    background: url('../img/socialclubbkg.jpg');
+    min-height: 1200px;  
+}
+
+.cuadro:hover{
+    opacity: 0.5;
+    background-color: aquamarine;
+}
+
+#home-food{
+
+    background: url('../img/frames.png');
+    display: block;
+    position: absolute;
+}
+
+
+.col-image{
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
